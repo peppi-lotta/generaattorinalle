@@ -1,39 +1,95 @@
-.nalle {
-    position: relative;
-    height: 561px;
-    width: 397px;
-    border: 10px solid white;
-    background-color: rgb(147, 203, 255);
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    letter-spacing: 3px;
+    justify-content: space-between;
 
-    .nalle_part {
-        position: absolute;
-        bottom: -10px;
+    .logo {
+        margin-left: 20px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        margin-right: 50px;
+
+        .menuItems {
+            margin-left: 50px;
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+
+            :hover {
+                letter-spacing: 6px;
+                font-size: large;
+            }
+
+            ::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #000;
+                transition: width .3s;
+            }
+
+            :hover::after {
+                width: 100%;
+            }
+        }
     }
 }
 
-.nalle_control {
-    display: flex;
-    flex-direction: row;
-    padding: 100px 100px;
-}
-.buttons {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+.content {
+    margin: 0 100px 0 100px;
+    h1 {
+        color: white;
+    }
 
-    button {
-        width: 101%;
-        height: 100%;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        letter-spacing: 5px;
-        font-weight: bold;
-        margin: 5px;
-        cursor: pointer;
-        background-color: rgb(186, 174, 255);
-        &:hover {
-            background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+
+    .nalle {
+        position: relative;
+        height: 561px;
+        width: 397px;
+        border: 10px solid white;
+        background-color: rgb(147, 203, 255);
+
+        .nalle_part {
+            position: absolute;
+            bottom: -10px;
+        }
+    }
+
+    .nalle_control {
+        display: flex;
+        flex-direction: row;
+        padding: 100px 100px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        button {
+            width: 101%;
+            height: 100%;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            letter-spacing: 5px;
+            font-weight: bold;
+            margin: 5px;
+            cursor: pointer;
+            background-color: rgb(186, 174, 255);
+
+            &:hover {
+                background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+            }
         }
     }
 }

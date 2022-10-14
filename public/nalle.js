@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Layout from '../../components/layout';
-import styles from '../../components/layout.module.scss';
+import Layout from '../components/layout';
+import styles from '../components/layout.module.scss';
 
 const NallePart = (props) => (
     <Image

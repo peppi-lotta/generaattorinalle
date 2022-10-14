@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Nalle from './nalle';
-import Layout from '../../components/layout';
-import styles from '../../components/layout.module.scss';
+import Nalle from '../public/nalle';
+import Layout from '../components/layout';
+import styles from '../components/layout.module.scss';
 import { useState } from 'react'
+import Header from '../public/navbar';
 
 //if we get more nalle-parts just change the maximum value here
 var maximum = 9;
@@ -12,7 +13,7 @@ var minimum = 1;
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min); 
+  return Math.floor(Math.random() * (max - min) + min);
 }
 
 export default function FirstPost() {
@@ -26,7 +27,7 @@ export default function FirstPost() {
 
   function handleClick(type, state) {
     let k;
-    if (state == maximum-1) {
+    if (state == maximum - 1) {
       k = 1;
     } else {
       k = state + 1
@@ -67,26 +68,24 @@ export default function FirstPost() {
 
   return (
     <Layout>
-      <Head>
-        <title>First Post</title>
-      </Head>
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2>
-      <div className={styles.nalle_control}>
-        <Nalle kuono={kuono} masu={masu} korvat={korvat} kadet={kadet} naama={naama} nena={nena} silmat={silmat} />
-        <div className={styles.buttons}>
-          <button onClick={() => handleClick()}>Random nalle</button>
-          <button onClick={() => handleClick('korvat', korvat)}>Vaihda korvat</button>
-          <button onClick={() => handleClick('silmat', silmat)}>Vaihda silmät</button>
-          <button onClick={() => handleClick('nena', nena)}>Vaihda nenä</button>
-          <button onClick={() => handleClick('kuono', kuono)}>Vaihda kuono</button>
-          <button onClick={() => handleClick('naama', naama)}>Vaihda naama</button>
-          <button onClick={() => handleClick('kadet', kadet)}>Vaihda kädet</button>
-          <button onClick={() => handleClick('masu', masu)}>Vaihda masu</button>
+        <Head>
+          <title>Generator</title>
+        </Head>
+        <Header />
+        <div className={styles.content}>
+        <h1>Generaattori</h1>
+        <div className={styles.nalle_control}>
+          <Nalle kuono={kuono} masu={masu} korvat={korvat} kadet={kadet} naama={naama} nena={nena} silmat={silmat} />
+          <div className={styles.buttons}>
+            <button onClick={() => handleClick()}>Random nalle</button>
+            <button onClick={() => handleClick('korvat', korvat)}>Vaihda korvat</button>
+            <button onClick={() => handleClick('silmat', silmat)}>Vaihda silmät</button>
+            <button onClick={() => handleClick('nena', nena)}>Vaihda nenä</button>
+            <button onClick={() => handleClick('kuono', kuono)}>Vaihda kuono</button>
+            <button onClick={() => handleClick('naama', naama)}>Vaihda naama</button>
+            <button onClick={() => handleClick('kadet', kadet)}>Vaihda kädet</button>
+            <button onClick={() => handleClick('masu', masu)}>Vaihda masu</button>
+          </div>
         </div>
       </div>
     </Layout>
