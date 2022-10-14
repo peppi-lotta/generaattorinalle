@@ -6,7 +6,7 @@ import styles from '../../components/layout.module.scss';
 import { useState } from 'react'
 
 //if we get more nalle-parts just change the maximum value here
-var maximum = 5;
+var maximum = 9;
 var minimum = 1;
 
 function getRandomInt(min, max) {
@@ -80,13 +80,13 @@ export default function FirstPost() {
         <Nalle kuono={kuono} masu={masu} korvat={korvat} kadet={kadet} naama={naama} nena={nena} silmat={silmat} />
         <div className={styles.buttons}>
           <button onClick={() => handleClick()}>Random nalle</button>
-          <button onClick={() => handleClick('kuono', kuono)}>Vaihda kuono</button>
-          <button onClick={() => handleClick('masu', masu)}>Vaihda masu</button>
           <button onClick={() => handleClick('korvat', korvat)}>Vaihda korvat</button>
-          <button onClick={() => handleClick('kadet', kadet)}>Vaihda kädet</button>
-          <button onClick={() => handleClick('naama', naama)}>Vaihda naama</button>
-          <button onClick={() => handleClick('nena', nena)}>Vaihda nenä</button>
           <button onClick={() => handleClick('silmat', silmat)}>Vaihda silmät</button>
+          <button onClick={() => handleClick('nena', nena)}>Vaihda nenä</button>
+          <button onClick={() => handleClick('kuono', kuono)}>Vaihda kuono</button>
+          <button onClick={() => handleClick('naama', naama)}>Vaihda naama</button>
+          <button onClick={() => handleClick('kadet', kadet)}>Vaihda kädet</button>
+          <button onClick={() => handleClick('masu', masu)}>Vaihda masu</button>
         </div>
       </div>
     </Layout>
