@@ -13,11 +13,19 @@ export default function Header() {
             name: "Generaattori",
             path: "/generator",
         },
+        {
+            name: "Junanalle",
+            path: "/trains",
+        },
+        {
+            name: "Bussinalle",
+            path: "/busses",
+        },
     ];
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <h3>Generaattorinalle</h3>
+                <h3>Nalle</h3>
             </div>
             <nav className={styles.navigation}>
                 {navLinks.map((link, index) => {

@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Nalle from '../public/nalle';
+import Nalle from '../components/nalle';
 import Layout from '../components/layout';
 import styles from '../components/layout.module.scss';
 import { useState } from 'react'
-import Header from '../public/navbar';
+import Header from '../components/navbar';
 
 //if we get more nalle-parts just change the maximum value here
 var maximum = 9;
@@ -16,7 +16,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-export default function FirstPost() {
+export default function Generator() {
   const [kuono, setKuono] = useState(getRandomInt(minimum, maximum));
   const [masu, setMasu] = useState(getRandomInt(minimum, maximum));
   const [korvat, setKorvat] = useState(getRandomInt(minimum, maximum));
