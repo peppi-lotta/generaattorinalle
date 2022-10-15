@@ -2,7 +2,7 @@ import Header from "../components/navbar";
 import Head from "next/head";
 import Layout from "../components/layout";
 import styles from '../components/layout.module.scss';
-import Map from "../components/Map";
+import BusMap from "../components/BusMap";
 
 export default function Busses() {
     return (
@@ -12,8 +12,8 @@ export default function Busses() {
             </Head>
             <Header />
             <div className={styles.content}>
-                <h1>Bunssinalle</h1>
-                <Map />
+                <h1>Bussinalle</h1>
+                <BusMap />
             </div>
         </Layout>
     );

@@ -5,6 +5,11 @@ import Layout from '../components/layout';
 import styles from '../components/layout.module.scss';
 import { useState } from 'react'
 import Header from '../components/navbar';
+const fs = require('fs');
+
+console.log(
+  fs.readFileSync('../public/bears.json').toString()
+)
 
 //if we get more nalle-parts just change the maximum value here
 var maximum = 9;
