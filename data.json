@@ -1,6 +1,20 @@
 {
     "bears": [
         {
+            "name": "Bearson Brown",
+            "face": {
+                "kuono": 2,
+                "silmat": 4,
+                "nena": 8,
+                "korvat": 7,
+                "naama": 6
+            },
+            "body": {
+                "kadet": 5,
+                "masu": 7
+            }
+        },
+        {
             "name": "Herbeart Von Fluff",
             "face": {
                 "kuono": 6,
@@ -43,7 +57,7 @@
             }
         },
         {
-            "name": "Aleksi Nalle",
+            "name": "Pepi Nalle",
             "face": {
                 "kuono": 3,
                 "silmat": 7,
@@ -57,17 +71,17 @@
             }
         },
         {
-            "name": "Bearson Brown",
+            "name": "Aleksi Nalle",
             "face": {
-                "kuono": 2,
-                "silmat": 4,
-                "nena": 8,
-                "korvat": 7,
-                "naama": 6
+                "kuono": 5,
+                "silmat": 2,
+                "nena": 5,
+                "korvat": 5,
+                "naama": 1
             },
             "body": {
                 "kadet": 5,
-                "masu": 7
+                "masu": 5
             }
         }
     ]
