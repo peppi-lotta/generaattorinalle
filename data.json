@@ -1,0 +1,74 @@
+{
+    "bears": [
+        {
+            "name": "Herbeart Von Fluff",
+            "face": {
+                "kuono": 6,
+                "silmat": 3,
+                "nena": 3,
+                "korvat": 8,
+                "naama": 7
+            },
+            "body": {
+                "kadet": 7,
+                "masu": 2
+            }
+        },
+        {
+            "name": "Sir Teddy Furminster",
+            "face": {
+                "kuono": 5,
+                "silmat": 8,
+                "nena": 5,
+                "korvat": 5,
+                "naama": 5
+            },
+            "body": {
+                "kadet": 8,
+                "masu": 5
+            }
+        },
+        {
+            "name": "Polar McBear",
+            "face": {
+                "kuono": 2,
+                "silmat": 2,
+                "nena": 7,
+                "korvat": 6,
+                "naama": 8
+            },
+            "body": {
+                "kadet": 6,
+                "masu": 5
+            }
+        },
+        {
+            "name": "Aleksi Nalle",
+            "face": {
+                "kuono": 3,
+                "silmat": 7,
+                "nena": 1,
+                "korvat": 2,
+                "naama": 1
+            },
+            "body": {
+                "kadet": 3,
+                "masu": 3
+            }
+        },
+        {
+            "name": "Bearson Brown",
+            "face": {
+                "kuono": 2,
+                "silmat": 4,
+                "nena": 8,
+                "korvat": 7,
+                "naama": 6
+            },
+            "body": {
+                "kadet": 5,
+                "masu": 7
+            }
+        }
+    ]
+}

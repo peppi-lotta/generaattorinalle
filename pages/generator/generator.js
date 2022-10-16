@@ -76,6 +76,7 @@ export default function Generator() {
           <button onClick={() => handleClick('naama', naama)}>Vaihda naama</button>
           <button onClick={() => handleClick('kadet', kadet)}>Vaihda kädet</button>
           <button onClick={() => handleClick('masu', masu)}>Vaihda masu</button>
+          <button className={styles.save} onClick={() => saveNalle()}>Talenna nalle</button>
         </div>
       </div>
     </Layout>

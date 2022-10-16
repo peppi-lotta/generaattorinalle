@@ -18,7 +18,7 @@ export const SavedBears = () => {
 
     useEffect(() => {
         async function getBears() {
-            const res = await fetch('data.json');
+            const res = await fetch('http://localhost:3001/bears');
             const data = await res.json();
             const bears: Bears = data;
 

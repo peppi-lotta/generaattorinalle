@@ -5,10 +5,10 @@ import styles from '../components/layout.module.scss';
 
 export default function Header() {
     const navLinks = [
-        {
+/*         {
             name: "Etusivu",
             path: "/"
-        },
+        }, */
         {
             name: "Generaattori",
             path: "/generator",
