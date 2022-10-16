@@ -14,6 +14,10 @@ export default function Header() {
             path: "/generator",
         },
         {
+            name: "Nalleria",
+            path: "/saved",
+        },
+        {
             name: "Junanalle",
             path: "/trains",
         },

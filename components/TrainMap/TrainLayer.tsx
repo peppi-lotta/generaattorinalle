@@ -20,8 +20,8 @@ export const TrainLayer = () => {
       const data = await res.json();
       const trains: Trains = data;
 
-      const busDataList = Object.entries(trains).map(([number, train]) => ({ number, ...train }));
-      setTrainData(busDataList);
+      const trainDataList = Object.entries(trains).map(([number, train]) => ({ number, ...train }));
+      setTrainData(trainDataList);
     }
 
     const interval = setInterval(() => {

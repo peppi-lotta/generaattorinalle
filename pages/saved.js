@@ -2,19 +2,19 @@ import Header from "../components/navbar";
 import Head from "next/head";
 import Layout from "../components/layout";
 import styles from '../components/layout.module.scss';
-import BusMap from "../components/BusMap";
+import Saved from "../components/savedBears/saved";
 import Footer from "../components/footer";
 
-export default function Busses() {
+export default function savedPage() {
     return (
         <Layout>
             <Head>
-                <title>Map</title>
+                <title>Nalleria</title>
             </Head>
             <Header />
             <div className={styles.content}>
-                <h1>Bussinalle</h1>
-                <BusMap />
+                <h1>Nalleria</h1>
+                <Saved />
             </div>
             <Footer />
         </Layout>

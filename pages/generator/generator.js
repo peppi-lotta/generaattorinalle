@@ -1,15 +1,7 @@
-import Link from 'next/link';
-import Head from 'next/head';
-import Nalle from '../components/nalle';
-import Layout from '../components/layout';
-import styles from '../components/layout.module.scss';
+import Nalle from '../../components/nalle';
+import Layout from '../../components/layout';
+import styles from '../../components/layout.module.scss';
 import { useState } from 'react'
-import Header from '../components/navbar';
-const fs = require('fs');
-
-console.log(
-  fs.readFileSync('../public/bears.json').toString()
-)
 
 //if we get more nalle-parts just change the maximum value here
 var maximum = 9;
@@ -73,26 +65,20 @@ export default function Generator() {
 
   return (
     <Layout>
-        <Head>
-          <title>Generator</title>
-        </Head>
-        <Header />
-        <div className={styles.content}>
-        <h1>Generaattori</h1>
-        <div className={styles.nalle_control}>
-          <Nalle kuono={kuono} masu={masu} korvat={korvat} kadet={kadet} naama={naama} nena={nena} silmat={silmat} />
-          <div className={styles.buttons}>
-            <button onClick={() => handleClick()}>Random nalle</button>
-            <button onClick={() => handleClick('korvat', korvat)}>Vaihda korvat</button>
-            <button onClick={() => handleClick('silmat', silmat)}>Vaihda silmät</button>
-            <button onClick={() => handleClick('nena', nena)}>Vaihda nenä</button>
-            <button onClick={() => handleClick('kuono', kuono)}>Vaihda kuono</button>
-            <button onClick={() => handleClick('naama', naama)}>Vaihda naama</button>
-            <button onClick={() => handleClick('kadet', kadet)}>Vaihda kädet</button>
-            <button onClick={() => handleClick('masu', masu)}>Vaihda masu</button>
-          </div>
+      <div className={styles.nalle_control}>
+        <Nalle kuono={kuono} masu={masu} korvat={korvat} kadet={kadet} naama={naama} nena={nena} silmat={silmat} />
+        <div className={styles.buttons}>
+          <button onClick={() => handleClick()}>Random nalle</button>
+          <button onClick={() => handleClick('korvat', korvat)}>Vaihda korvat</button>
+          <button onClick={() => handleClick('silmat', silmat)}>Vaihda silmät</button>
+          <button onClick={() => handleClick('nena', nena)}>Vaihda nenä</button>
+          <button onClick={() => handleClick('kuono', kuono)}>Vaihda kuono</button>
+          <button onClick={() => handleClick('naama', naama)}>Vaihda naama</button>
+          <button onClick={() => handleClick('kadet', kadet)}>Vaihda kädet</button>
+          <button onClick={() => handleClick('masu', masu)}>Vaihda masu</button>
         </div>
       </div>
     </Layout>
   );
+
 }
