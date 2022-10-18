@@ -133,17 +133,6 @@
       "id": 12
     },
     {
-      "name": "Äiti Nalle",
-      "kuono": 1,
-      "silmat": 5,
-      "nena": 4,
-      "korvat": 4,
-      "naama": 6,
-      "kadet": 7,
-      "masu": 3,
-      "id": 13
-    },
-    {
       "name": "Once in a Blue Bear ",
       "kuono": 1,
       "silmat": 4,
@@ -177,15 +166,15 @@
       "id": 16
     },
     {
-      "name": "Tuska Nalle",
-      "kuono": 5,
-      "silmat": 8,
-      "nena": 8,
-      "korvat": 6,
-      "naama": 6,
-      "kadet": 3,
-      "masu": 5,
-      "id": 17
+      "name": "Nalle Nalle ",
+      "kuono": 6,
+      "silmat": 5,
+      "nena": 2,
+      "korvat": 3,
+      "naama": 1,
+      "kadet": 7,
+      "masu": 4,
+      "id": 18
     }
   ]
 }

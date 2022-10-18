@@ -107,6 +107,7 @@ export default function Generator() {
 
   return (
     <Layout>
+      <p>Tällä hetkellä uniikkeja nalleja voi luoda 2097152</p>
       <div className={styles.row}>
         <div className={styles.nalle_control}>
           <Nalle kuono={kuono} masu={masu} korvat={korvat} kadet={kadet} naama={naama} nena={nena} silmat={silmat} />
