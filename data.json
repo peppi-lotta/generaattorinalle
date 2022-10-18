@@ -1,88 +1,191 @@
 {
-    "bears": [
-        {
-            "name": "Bearson Brown",
-            "face": {
-                "kuono": 2,
-                "silmat": 4,
-                "nena": 8,
-                "korvat": 7,
-                "naama": 6
-            },
-            "body": {
-                "kadet": 5,
-                "masu": 7
-            }
-        },
-        {
-            "name": "Herbeart Von Fluff",
-            "face": {
-                "kuono": 6,
-                "silmat": 3,
-                "nena": 3,
-                "korvat": 8,
-                "naama": 7
-            },
-            "body": {
-                "kadet": 7,
-                "masu": 2
-            }
-        },
-        {
-            "name": "Sir Teddy Furminster",
-            "face": {
-                "kuono": 5,
-                "silmat": 8,
-                "nena": 5,
-                "korvat": 5,
-                "naama": 5
-            },
-            "body": {
-                "kadet": 8,
-                "masu": 5
-            }
-        },
-        {
-            "name": "Polar McBear",
-            "face": {
-                "kuono": 2,
-                "silmat": 2,
-                "nena": 7,
-                "korvat": 6,
-                "naama": 8
-            },
-            "body": {
-                "kadet": 6,
-                "masu": 5
-            }
-        },
-        {
-            "name": "Pepi Nalle",
-            "face": {
-                "kuono": 3,
-                "silmat": 7,
-                "nena": 1,
-                "korvat": 2,
-                "naama": 1
-            },
-            "body": {
-                "kadet": 3,
-                "masu": 3
-            }
-        },
-        {
-            "name": "Aleksi Nalle",
-            "face": {
-                "kuono": 5,
-                "silmat": 2,
-                "nena": 5,
-                "korvat": 5,
-                "naama": 1
-            },
-            "body": {
-                "kadet": 5,
-                "masu": 5
-            }
-        }
-    ]
+  "bears": [
+    {
+      "id": 1,
+      "name": "Bearson Brown",
+      "kuono": 2,
+      "silmat": 4,
+      "nena": 8,
+      "korvat": 7,
+      "naama": 6,
+      "kadet": 5,
+      "masu": 7
+    },
+    {
+      "id": 2,
+      "name": "Herbeart Von Fluff",
+      "kuono": 6,
+      "silmat": 3,
+      "nena": 3,
+      "korvat": 8,
+      "naama": 7,
+      "kadet": 7,
+      "masu": 2
+    },
+    {
+      "id": 3,
+      "name": "Sir Teddy Furminster",
+      "kuono": 5,
+      "silmat": 8,
+      "nena": 5,
+      "korvat": 5,
+      "naama": 5,
+      "kadet": 8,
+      "masu": 5
+    },
+    {
+      "id": 4,
+      "name": "Polar McBear",
+      "kuono": 2,
+      "silmat": 2,
+      "nena": 7,
+      "korvat": 6,
+      "naama": 8,
+      "kadet": 6,
+      "masu": 5
+    },
+    {
+      "id": 5,
+      "name": "Pepi Nalle",
+      "kuono": 3,
+      "silmat": 7,
+      "nena": 1,
+      "korvat": 2,
+      "naama": 1,
+      "kadet": 3,
+      "masu": 3
+    },
+    {
+      "id": 6,
+      "name": "Aleksi Nalle",
+      "kuono": 5,
+      "silmat": 2,
+      "nena": 5,
+      "korvat": 5,
+      "naama": 1,
+      "kadet": 5,
+      "masu": 5
+    },
+    {
+      "name": "Hello Nalle",
+      "kuono": 5,
+      "silmat": 1,
+      "nena": 5,
+      "korvat": 5,
+      "naama": 4,
+      "kadet": 4,
+      "masu": 6,
+      "id": 7
+    },
+    {
+      "name": "Nänni Nalle",
+      "kuono": 4,
+      "silmat": 1,
+      "nena": 6,
+      "korvat": 2,
+      "naama": 1,
+      "kadet": 3,
+      "masu": 2,
+      "id": 8
+    },
+    {
+      "name": "Random Bear",
+      "kuono": 8,
+      "silmat": 2,
+      "nena": 1,
+      "korvat": 8,
+      "naama": 2,
+      "kadet": 2,
+      "masu": 2,
+      "id": 9
+    },
+    {
+      "name": "Murinalle",
+      "kuono": 2,
+      "silmat": 1,
+      "nena": 5,
+      "korvat": 4,
+      "naama": 2,
+      "kadet": 2,
+      "masu": 7,
+      "id": 10
+    },
+    {
+      "name": "Madeline 'Maddy' Grizzly ",
+      "kuono": 5,
+      "silmat": 6,
+      "nena": 6,
+      "korvat": 7,
+      "naama": 5,
+      "kadet": 5,
+      "masu": 7,
+      "id": 11
+    },
+    {
+      "name": "Ursula Ursus ",
+      "kuono": 3,
+      "silmat": 8,
+      "nena": 4,
+      "korvat": 6,
+      "naama": 8,
+      "kadet": 4,
+      "masu": 3,
+      "id": 12
+    },
+    {
+      "name": "Äiti Nalle",
+      "kuono": 1,
+      "silmat": 5,
+      "nena": 4,
+      "korvat": 4,
+      "naama": 6,
+      "kadet": 7,
+      "masu": 3,
+      "id": 13
+    },
+    {
+      "name": "Once in a Blue Bear ",
+      "kuono": 1,
+      "silmat": 4,
+      "nena": 7,
+      "korvat": 8,
+      "naama": 7,
+      "kadet": 7,
+      "masu": 3,
+      "id": 14
+    },
+    {
+      "name": "Viola Kontio",
+      "kuono": 6,
+      "silmat": 7,
+      "nena": 3,
+      "korvat": 3,
+      "naama": 3,
+      "kadet": 2,
+      "masu": 2,
+      "id": 15
+    },
+    {
+      "name": "Bearly Yellow",
+      "kuono": 3,
+      "silmat": 3,
+      "nena": 3,
+      "korvat": 4,
+      "naama": 8,
+      "kadet": 6,
+      "masu": 3,
+      "id": 16
+    },
+    {
+      "name": "Tuska Nalle",
+      "kuono": 5,
+      "silmat": 8,
+      "nena": 8,
+      "korvat": 6,
+      "naama": 6,
+      "kadet": 3,
+      "masu": 5,
+      "id": 17
+    }
+  ]
 }

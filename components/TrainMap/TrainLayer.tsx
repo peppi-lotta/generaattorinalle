@@ -32,8 +32,8 @@ export const TrainLayer = () => {
   });
 
   const pinIcon = new Icon({
-    iconUrl: '/map-marker.png',
-    iconSize: [48, 48],
+    iconUrl: '/juna.png',
+    iconSize: [55, 55],
     iconAnchor: [24, 48],
     popupAnchor: [0, -48],
   });

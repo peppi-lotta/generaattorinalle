@@ -5,8 +5,13 @@ import styles from '../../components/layout.module.scss';
 
 interface Bear {
     name: string;
-    face: any;
-    body: any;
+    kuono: number;
+    masu: number;
+    kadet: number;
+    korvat: number;
+    naama: number;
+    nena: number;
+    silmat: number;
 }
 
 interface Bears {
@@ -36,7 +41,7 @@ export const SavedBears = () => {
                 {bearData.map((bear) => (
                     <div className={styles.bear}>
                         <p>{bear.name}</p>
-                        <Nalle masu={bear.body.masu} kadet={bear.body.kadet} kuono={bear.face.kuono} korvat={bear.face.korvat} naama={bear.face.naama} nena={bear.face.nena} silmat={bear.face.silmat} />
+                        <Nalle masu={bear.masu} kadet={bear.kadet} kuono={bear.kuono} korvat={bear.korvat} naama={bear.naama} nena={bear.nena} silmat={bear.silmat} />
                     </div>
                 ))}
             </div>
